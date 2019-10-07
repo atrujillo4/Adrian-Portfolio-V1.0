@@ -1,6 +1,7 @@
 *{
     margin: 0px;
     padding: 0px; 
+    overflow-x: hidden;
     /* color: #5d4954; */
     
 }
@@ -9,19 +10,65 @@ body{
     background-color: black;
 }
 
+.carousel-inner{
+    /* padding-top: 100px; */
+}
+
+#carouselExampleControls{
+    padding-top:65px;
+    width:80%;
+    margin: auto;
+
+}
+
+.job-desc{
+    
+    padding: 1vw;
+    color: black;
+}
+
 .title{
     color: rgb(128, 29, 29);
 }
 
-.jobs{
+.job-box{
+    background-color: #555454; 
+    border-style: solid;
+    padding: 4vw;
+    margin: 5vw;
+}
+
+#job-title{
+    padding-top: 2vw;
+    text-align: center;
+    color: pink;
+}
+
+#job-location{
+    display:inline-block;
+    width: 48%;
+    margin-right:10px; 
+    color: black;
+}
+
+#job-duration{
+    display:inline-block; 
+    width: 48%;  
+    text-align: right;
+    color: black;
+}
+
+/* .jobs{
     border-style: solid;
     background-color: #555454;
     padding: 4vw;
     margin: 4vw;
-}
+} */
+
+
 
 #about-me-desc{
-    color: white;
+    color: pink;
     padding: 4vw;
 }
 
@@ -34,12 +81,13 @@ body{
 }
 
 .website-desc{
-    color: pink;
+    color: black;
     text-align: center;
 }
 
 #subtitle{
     text-align: center;
+    color: pink;
 }
 
 
@@ -47,12 +95,23 @@ body{
     margin: 20px;
     
 }
+.carousel-inner img{
+    opacity: 0.5;
+}
 
 
-
-
-
-
+.carousel-item{
+    /* position: relative; */
+    text-align: center;
+    color: white;
+}
+.center{
+    font-size: 5vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 nav{
     display: flex;
     justify-content: space-around;
@@ -62,6 +121,26 @@ nav{
     background-color: #5d4954;
     
 }
+
+@media only screen and (min-width: 600px) {
+    #carouselExampleControls {
+      height: 65%;
+      width: 65%;
+    }
+    body{
+        background-color: black;
+    }
+    
+} 
+@media only screen and (min-width: 992px) {
+    
+    nav{
+        max-height: 10vh;
+    }
+    
+} 
+
+
 
 /* .logo {
     color: rgb(206, 206, 206);
@@ -163,6 +242,12 @@ nav{
 .toggle .line3{
     transform: rotate(45deg) translate(-5px, -6px);
 } */
+ul{
+    list-style-position: inside;
+    list-style-type: decimal;
+    margin: 0;
+    padding: 30px;
+}
 
 footer{
     padding:20px;
