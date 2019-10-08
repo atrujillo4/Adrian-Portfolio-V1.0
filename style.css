@@ -6,6 +6,10 @@
     
 }
 
+html {
+    -webkit-text-size-adjust: none;
+}
+
 body{
     background-color: black;
 }
@@ -44,16 +48,20 @@ body{
     color: pink;
 }
 
+.resume-button{
+    padding-top:8px;
+}
+
 #job-location{
     display:inline-block;
-    width: 48%;
+    width: 46%;
     margin-right:10px; 
     color: black;
 }
 
 #job-duration{
     display:inline-block; 
-    width: 48%;  
+    width: 46%;  
     text-align: right;
     color: black;
 }
@@ -122,6 +130,8 @@ nav{
     
 }
 
+
+
 @media only screen and (min-width: 600px) {
     #carouselExampleControls {
       height: 65%;
@@ -136,6 +146,17 @@ nav{
     
     nav{
         max-height: 10vh;
+    }
+    
+} 
+@media only screen and (max-width: 992px) {
+    
+    .nav-item{
+        
+        
+        
+        
+        
     }
     
 } 
