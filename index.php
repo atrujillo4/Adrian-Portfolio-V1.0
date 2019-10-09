@@ -112,7 +112,7 @@
                                 My name is Adrian, a software developer that is fascinated by technology. 
                                 I first gained an interest in coding when I took an elective class at a local community college. 
                                 I instantly fell in love with the idea that coding is limited by the imagination.
-                                With a Bachlor's degree in Computer Science and an Associate's degree in Mathetics educational is the most important thing to me.
+                                With a Bachlor's degree in Computer Science and an Associate's degree in Mathetics education is the most important thing to me.
                             </p>
                         </span>
                                 
