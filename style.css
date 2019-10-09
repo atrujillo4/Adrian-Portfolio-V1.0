@@ -3,8 +3,10 @@
     padding: 0px; 
     overflow-x: hidden;
     /* color: #5d4954; */
-    
+    outline: none;
 }
+
+
 
 html {
     -webkit-text-size-adjust: none;
@@ -36,11 +38,18 @@ body{
 }
 
 .job-box{
-    background-color: #555454; 
+    background-color: #615f5f; 
     border-style: solid;
     padding: 4vw;
     margin: 5vw;
 }
+
+/* #about-me-box{
+    background-color: #615f5f; 
+    border-style: solid;
+    padding: 4vw;
+    margin: 5vw;
+} */
 
 #job-title{
     padding-top: 2vw;
@@ -76,13 +85,18 @@ body{
 
 
 #about-me-desc{
-    color: pink;
+    color:white;
     padding: 4vw;
+}
+
+#me{
+    width: 250px;
+    height: 250px;
 }
 
 
 .project-names{
-    background-color: #555454; 
+    background-color: #615f5f; 
     border-style: solid;
     padding: 4vw;
     margin: 5vw;
@@ -131,7 +145,7 @@ nav{
 }
 
 
-
+/* tablet screen */
 @media only screen and (min-width: 600px) {
     #carouselExampleControls {
       height: 65%;
@@ -142,15 +156,53 @@ nav{
     }
     
 } 
+
+/* desktop screen */
 @media only screen and (min-width: 992px) {
     
     nav{
         max-height: 10vh;
     }
+    #about-me-desc{  
+        display: inline-block;
+    }
+    #photo{
+        opacity: 0.8;
+        width: 250px;
+        height: 250px;
+    }
+    #me{
+        float: left;
+        width: 40%;
+    }
+    #about-me-text{
+        float: right;
+        width: 50%;
+    }
+    body{
+        /* background-color: white; for testing purposes change color */
+    }
     
 } 
+
+/* mobile  */
 @media only screen and (max-width: 992px) {
-    
+    #me{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+    }
+    #about-me-desc{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #photo{
+        width: 250px;
+        height: 250px;
+        
+    }
     .nav-item{
         
         
@@ -263,6 +315,72 @@ nav{
 .toggle .line3{
     transform: rotate(45deg) translate(-5px, -6px);
 } */
+
+.contact-me-wrapper{
+    background: white;
+    margin: 0 auto;
+    max-width: 400px;
+    width: 100%;
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 4p 4px 2px rgba(254, 236, 164, 1);
+}
+
+.contact-me-wrapper h2{
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.contact-me-wrapper .input-field{
+    margin-bottom: 10px;
+}
+
+.contact-me-wrapper #button{
+    border:0;
+    margin-top: 15px;
+    padding: 10px;
+    width: 100%;
+    background: #5d4954;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+
+}
+
+.contact-me-wrapper .input-field input[type="text"],
+.contact-me-wrapper .input-field input[type="email"],
+.contact-me-wrapper textarea{
+    width: 100%;
+    padding: 10px;
+}
+
+
+
+.contact-me-wrapper textarea{
+    height: 80px;
+    resize: none;
+}
+
+
+
+
+
+
+.contact-me-wrapper #error-message{
+    margin-bottom: 20px;
+    padding: 0px;
+    background: #fe8b8e;
+    text-align: center;
+    font-size: 14px;
+    transition: all 0.5s ease;
+}
+
+
 ul{
     list-style-position: inside;
     list-style-type: decimal;

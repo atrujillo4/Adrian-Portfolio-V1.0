@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Adrian Trujillo Portfolio</title>
     
+    <script src="scripts.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
@@ -44,17 +45,17 @@
 <body>
 
     <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color: light red">
-        <a class="navbar-brand" href="#home">Mr. A</a>
+        <a class="navbar-brand" href="#home" style="color: white">Adrian Trujillo</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <div class="navbar-nav">
                 <ul class="nav navbar-nav ml-auto mx-auto text-center" data-toggle="collapse">
-                    <a class="nav-item nav-link" data-toggle="collapse" data-target=".navbar-collapse.show" href="#home">Home</a>
-                    <a class="nav-item nav-link" data-toggle="collapse" data-target=".navbar-collapse.show" href="#about">About</a>
-                    <a class="nav-item nav-link" data-toggle="collapse" data-target=".navbar-collapse.show" href="#work">Work</a>
-                    <a class="nav-item nav-link" data-toggle="collapse" data-target=".navbar-collapse.show" href="#projects">Projects</a>
+                    <a class="nav-item nav-link" data-toggle="collapse" data-target=".navbar-collapse.show" href="#home" style="color: white">Home</a>
+                    <a class="nav-item nav-link" data-toggle="collapse" data-target=".navbar-collapse.show" href="#about" style="color: white">About</a>
+                    <a class="nav-item nav-link" data-toggle="collapse" data-target=".navbar-collapse.show" href="#work" style="color: white">Work</a>
+                    <a class="nav-item nav-link" data-toggle="collapse" data-target=".navbar-collapse.show" href="#projects" style="color: white">Projects</a>
                     <a class="resume-button" href="docs/Trujillo-Resume.pdf" target="_blank"><button>Resume</button></a>
                 </ul>
                 
@@ -66,13 +67,8 @@
     </div>
 
 <!-- 
-    add selfie
-     
-    add about me from iphone notes
-    Social medias (github, linkedin)
-    fix navbar items 
-    add my resume link 
-    Dark mode and light mode
+    To Do List:
+        add contact me form 
 -->
 
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -102,24 +98,34 @@
 
 
     <!-- About -->
-    <div class="row justify-content-center my-row" id="about" style="padding-top:70px">
+    <div class="row justify-content-center my-row" id="about" style="padding-top:60px">
         <div class="col-12 col-sm-12 col-md-9 col-lg-9 col-xl-9 my col">
             <div class="about-me">
                 <h1 class="title">About me</h1>
-                <div id="about-me-desc">
-                    <p>
-                        I'm Adrian, a freelance developer that is fascinated by technology. I first gained an interest in coding when I took an elective class at a local community college. I instantly fell in love with the idea that coding is limited by the imagination.
-                    </p>
-                    <p>
-                    </p>
+                <div id="about-me-box">
+                    <div id="about-me-desc">  
+                        <span id="me">
+                            <img id="photo" src="img/me.jpg"> 
+                        </span>
+                        <span id="about-me-text">
+                            <p>  
+                                My name is Adrian, a software developer that is fascinated by technology. 
+                                I first gained an interest in coding when I took an elective class at a local community college. 
+                                I instantly fell in love with the idea that coding is limited by the imagination.
+                                With a Bachlor's degree in Computer Science and an Associate's degree in Mathetics educational is the most important thing to me.
+                            </p>
+                        </span>
+                                
+                    </div>
                 </div>
+                
            </div>    
         </div>
     </div>
     
 
     <!-- Work -->
-    <div class="row justify-content-center my-row" id="work" style="padding-top:70px">
+    <div class="row justify-content-center my-row" id="work" style="padding-top:50px">
         <div class="col-12 col-sm-12 col-md-9 col-lg-9 col-xl-9 my col">
             <div class="work">
                 <h1 class="title">Work</h1>
@@ -177,7 +183,7 @@
     </div>
 
     <!-- Projects -->
-    <div class="row justify-content-center my-row" id="projects" style="padding-top:70px">
+    <div class="row justify-content-center my-row" id="projects" style="padding-top:50px">
         <div class="col-12 col-sm-12 col-md-9 col-lg-9 col-xl-9 my col">
             <div class="projects">
                 <h1 class="title">Projects</h1>
@@ -211,6 +217,32 @@
 
             </div>
         </div>
+    </div>
+
+    <!-- Still need to add scipt to form -->
+    <!-- Contact Me Form -->
+    <div class="contact-me-wrapper">
+        <h2>Contact Me</h2>
+        <div id="error-message">
+
+        </div>
+        <form id="contact-form" onsubmit="return validation()">
+            <div class="input-field">
+                <input type="text" placeholder="Name" id="name">
+            </div>
+            <div class="input-field">
+                <input type="text" placeholder="Subject" id="subject">
+            </div>
+            <div class="input-field">
+                <input type="email" placeholder="Email" id="email">
+            </div>
+            <div class="input-field">
+                <textarea placeholder="message" id="message"></textarea>
+            </div>
+            
+            <button id="button">submit</button>
+            
+        </form>
     </div>
 
 
