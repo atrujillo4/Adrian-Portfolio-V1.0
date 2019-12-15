@@ -8,13 +8,13 @@ function validation(){
 
     errormessage.style.padding = "10px";
 
-    if(name.length < 5){
+    if(name.length < 3){
         text = "Please Enter Valid Name";
         errormessage.innerHTML = text;
         return false;
     }
 
-    if(subject.length < 4){
+    if(subject.length < 3){
         text = "Please Enter Correct Subject";
         errormessage.innerHTML = text;
         return false;
