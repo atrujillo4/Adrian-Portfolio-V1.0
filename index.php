@@ -68,7 +68,8 @@
 
 <!-- 
     To Do List:
-        add contact me form 
+        Get feedback from friends and family
+        Work on projects to build resume
 -->
 
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -219,25 +220,25 @@
         </div>
     </div>
 
-    <!-- Still need to add scipt to form -->
+    <!-- Uses a third-party website to email me (might change later using a database instead-->
     <!-- Contact Me Form -->
     <div class="contact-me-wrapper">
         <h2>Contact Me</h2>
         <div id="error-message">
 
         </div>
-        <form id="contact-form" onsubmit="return validation()">
+        <form id="contact-form" onsubmit="return validation()" action="https://formspree.io/xeqoyrnj" method="POST"  >
             <div class="input-field">
-                <input type="text" placeholder="Name" id="name">
+                <input type="text" placeholder="Name" id="name" name="name">
             </div>
             <div class="input-field">
-                <input type="text" placeholder="Subject" id="subject">
+                <input type="text" placeholder="Subject" id="subject" name="subject">
             </div>
             <div class="input-field">
-                <input type="email" placeholder="Email" id="email">
+                <input type="email" placeholder="Email" id="email" name="email">
             </div>
             <div class="input-field">
-                <textarea placeholder="message" id="message"></textarea>
+                <textarea placeholder="message" id="message" name="message"></textarea>
             </div>
             
             <button id="button">submit</button>
