@@ -163,7 +163,7 @@ nav{
     
     nav{
         max-height: 10vh;
-        overflow: hidden;
+        /* overflow: hidden; */
     }
     #about-me-desc{  
         display: inline-block;
