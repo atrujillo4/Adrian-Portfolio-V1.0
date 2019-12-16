@@ -222,28 +222,33 @@
 
     <!-- Uses a third-party website to email me (might change later using a database instead-->
     <!-- Contact Me Form -->
-    <div class="contact-me-wrapper">
-        <h2>Contact Me</h2>
-        <div id="error-message">
 
+    
+        
+    <div class="contact-me-wrapper" id="contact-me-wrapper">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 my col">
+            <h2>Contact Me</h2>
+            <div id="error-message">
+
+            </div>
+            <form id="contact-form" onsubmit="return validation()" action="https://formspree.io/xeqoyrnj" method="POST"  >
+                <div class="input-field">
+                    <input type="text" placeholder="Name" id="name" name="name">
+                </div>
+                <div class="input-field">
+                    <input type="text" placeholder="Subject" id="subject" name="subject">
+                </div>
+                <div class="input-field">
+                    <input type="email" placeholder="Email" id="email" name="email">
+                </div>
+                <div class="input-field">
+                    <textarea placeholder="message" id="message" name="message"></textarea>
+                </div>
+                
+                <button id="button">submit</button>
+                
+            </form>
         </div>
-        <form id="contact-form" onsubmit="return validation()" action="https://formspree.io/xeqoyrnj" method="POST"  >
-            <div class="input-field">
-                <input type="text" placeholder="Name" id="name" name="name">
-            </div>
-            <div class="input-field">
-                <input type="text" placeholder="Subject" id="subject" name="subject">
-            </div>
-            <div class="input-field">
-                <input type="email" placeholder="Email" id="email" name="email">
-            </div>
-            <div class="input-field">
-                <textarea placeholder="message" id="message" name="message"></textarea>
-            </div>
-            
-            <button id="button">submit</button>
-            
-        </form>
     </div>
 
     
@@ -251,9 +256,11 @@
 
 </body>
 
-<footer>
-    <p>Adrian Trujillo, Copyright &copy; 2019</p>
-    <a href="https://github.com/atrujillo4" class="fa fa-github"></a>
-    <a href="https://www.linkedin.com/in/adrian-trujillo-31ab77160/" class="fa fa-linkedin-square"></a>
-    <a href="mailto:atrujillo2346@gmail.com?subject=The%20subject&amp;body=This%20is%20a%20message%20body" class="fa fa-envelope"></a>
+<footer class="row justify-content-center my-row">
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 my col">
+        <p>Adrian Trujillo, Copyright &copy; 2019</p>
+        <a href="https://github.com/atrujillo4" class="fa fa-github"></a>
+        <a href="https://www.linkedin.com/in/adrian-trujillo-31ab77160/" class="fa fa-linkedin-square"></a>
+        <a href="mailto:atrujillo2346@gmail.com?subject=The%20subject&amp;body=This%20is%20a%20message%20body" class="fa fa-envelope"></a>
+    </div>
 </footer>
