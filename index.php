@@ -246,6 +246,8 @@
         </form>
     </div>
 
+    
+
 
 </body>
 
@@ -253,4 +255,5 @@
     <p>Adrian Trujillo, Copyright &copy; 2019</p>
     <a href="https://github.com/atrujillo4" class="fa fa-github"></a>
     <a href="https://www.linkedin.com/in/adrian-trujillo-31ab77160/" class="fa fa-linkedin-square"></a>
+    <a href="mailto:atrujillo2346@gmail.com?subject=The%20subject&amp;body=This%20is%20a%20message%20body" class="fa fa-envelope"></a>
 </footer>
